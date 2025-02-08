@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screenshot</title>
+    <script src="libs/jspdf.umd.min.js"></script> <!-- Use local jsPDF -->
+    <script src="screenshot.js"></script> <!-- Link to external JS file -->
+</head>
+<body style="text-align:center;">
+    <h2>Captured Screenshot</h2>
+    <canvas id="screenshotCanvas"></canvas>
+    <br><br>
+    <button onclick="downloadImage()">Download as JPEG</button>
+    <button onclick="downloadPDF()">Download as PDF</button>
+</body>
+</html>

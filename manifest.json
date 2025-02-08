@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+   "name": "Full Website Screenshot",
+   "version": "1.0",
+   "description": "Takes a full-page screenshot and downloads it as JPEG or PDF.",
+   "permissions" : ["activeTab", "scripting", "downloads", "tabs"],
+   "host_permissions": ["<all_urls>"],
+   "background": {
+    "service_worker": "background.js"
+   },
+   "web_accessible_resources": [
+    {
+      "resources": ["libs/jspdf.umd.min.js","screenshot.html", "screenshot.js", "content.js", "storage"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+   "action": {}
+
+}
