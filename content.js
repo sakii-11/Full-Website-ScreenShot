@@ -5,7 +5,7 @@ async function captureFullPage() {
     let currentScroll = 0;
 
     // Hide scrollbar
-    // document.documentElement.style.overflow = "hidden";
+    document.documentElement.style.overflow = "hidden";
 
     while (currentScroll < scrollHeight) {
         window.scrollTo(0, currentScroll);
@@ -32,7 +32,7 @@ async function captureFullPage() {
     }
 
     // Restore scrollbar
-    // document.documentElement.style.overflow = "auto";
+    document.documentElement.style.overflow = "auto";
 
     // Merge all images into one
     chrome.runtime.sendMessage({ action: "open_tab", images });

@@ -1,19 +1,19 @@
 {
   "manifest_version": 3,
-   "name": "Full Website Screenshot",
+   "name": "WebsiteCapture",
    "version": "1.0",
-   "description": "Takes a full-page screenshot and downloads it as JPEG or PDF.",
+   "description": "Take a full webpage page screenshot or screen record and download it as JPEG, PDF or video.",
    "permissions" : ["activeTab", "scripting", "downloads", "tabs"],
    "host_permissions": ["<all_urls>"],
    "background": {
     "service_worker": "background.js"
    },
-   "web_accessible_resources": [
-    {
-      "resources": ["libs/jspdf.umd.min.js","screenshot.html", "screenshot.js", "content.js", "storage"],
-      "matches": ["<all_urls>"]
+   "action": {
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
     }
-  ],
-   "action": {}
+   }
 
 }
